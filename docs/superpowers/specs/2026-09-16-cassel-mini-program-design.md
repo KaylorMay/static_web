@@ -74,7 +74,7 @@ miniprogram/
    └─ academy-orb.svg
 ```
 
-`project.config.json` 放在项目根目录，设置 `miniprogramRoot` 为 `miniprogram/`，本地预览阶段不填写 AppID；正式发布前由项目所有者替换为真实 AppID。
+`project.config.json` 放在项目根目录，设置 `miniprogramRoot` 为 `miniprogram/`，当前使用微信测试号 AppID 进行开发和真机预览；正式发布前由项目所有者替换为正式 AppID。
 
 ## 数据与组件设计
 
