@@ -1,0 +1,5 @@
+<view class="stat-row">
+  <text class="stat-label">{{stat.label}}</text>
+  <text class="stat-value">{{stat.value}}</text>
+  <text class="stat-unit">{{stat.unit}}</text>
+</view>

@@ -1,0 +1,19 @@
+<view class="department-card {{expanded ? 'is-expanded' : ''}}" bindtap="toggle">
+  <view class="card-topline">
+    <text>{{department.code}}</text>
+    <text class="card-topline-accent">{{department.englishName}}</text>
+  </view>
+  <view class="department-icon" aria-hidden="true">
+    <view class="icon-ring"></view>
+    <view class="icon-core"></view>
+  </view>
+  <text class="department-name">{{department.name}}</text>
+  <text class="department-description">{{department.description}}</text>
+  <view wx:if="{{expanded}}" class="expanded-copy">
+    <text>{{department.detail}}</text>
+  </view>
+  <view class="card-link">
+    <text>{{expanded ? '收起记录' : '展开档案'}}</text>
+    <text class="card-arrow">↗</text>
+  </view>
+</view>

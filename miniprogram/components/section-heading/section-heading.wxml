@@ -1,0 +1,5 @@
+<view class="section-heading">
+  <text class="section-eyebrow">{{eyebrow}}</text>
+  <text class="section-title">{{title}}</text>
+  <text class="section-title section-title-highlight">{{highlight}}</text>
+</view>

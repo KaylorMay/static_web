@@ -1,0 +1,157 @@
+page {
+  background: #080d14;
+  color: #eef0e9;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 28rpx;
+  line-height: 1.6;
+}
+
+view,
+text,
+button,
+input,
+textarea,
+picker {
+  box-sizing: border-box;
+}
+
+button::after {
+  border: 0;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+}
+
+.page-shell {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  padding-bottom: 96rpx;
+  background:
+    linear-gradient(rgba(135, 166, 171, .035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(135, 166, 171, .035) 1px, transparent 1px),
+    #080d14;
+  background-size: 72rpx 72rpx;
+}
+
+.page-shell::before {
+  position: absolute;
+  top: 0;
+  right: -160rpx;
+  width: 520rpx;
+  height: 520rpx;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(198, 166, 106, .11), transparent 68%);
+  content: "";
+  pointer-events: none;
+}
+
+.page-container {
+  position: relative;
+  z-index: 1;
+  margin: 0 32rpx;
+}
+
+.page-section {
+  padding: 88rpx 0;
+}
+
+.eyebrow,
+.section-eyebrow,
+.label-mono,
+.card-topline,
+.form-heading,
+.contact-label {
+  color: #87a6ab;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 18rpx;
+  letter-spacing: .14em;
+  line-height: 1.5;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+}
+
+.signal-dot {
+  display: inline-block;
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 50%;
+  background: #c6a66a;
+  box-shadow: 0 0 18rpx rgba(198, 166, 106, .8);
+}
+
+.muted-copy {
+  color: #9aa9aa;
+  font-size: 26rpx;
+  line-height: 1.9;
+}
+
+.gold-copy {
+  color: #e5cf95;
+}
+
+.section-divider {
+  height: 1rpx;
+  margin: 0 32rpx;
+  background: rgba(167, 193, 194, .15);
+}
+
+.section-heading {
+  margin-bottom: 42rpx;
+}
+
+.section-title {
+  display: block;
+  color: #eef0e9;
+  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", "Noto Serif SC", "Songti SC", serif;
+  font-size: 68rpx;
+  letter-spacing: -.06em;
+  line-height: 1.12;
+}
+
+.section-title-highlight {
+  color: #e5cf95;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18rpx;
+}
+
+.button-quiet {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 84rpx;
+  padding: 0 22rpx;
+  border: 1rpx solid rgba(167, 193, 194, .25);
+  color: #87a6ab;
+  font-size: 22rpx;
+  letter-spacing: .08em;
+}
+
+.button-quiet:active {
+  background: rgba(135, 166, 171, .08);
+}
+
+.page-footer-note {
+  margin-top: 72rpx;
+  padding-top: 24rpx;
+  border-top: 1rpx solid rgba(167, 193, 194, .15);
+  color: #627178;
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 17rpx;
+  letter-spacing: .08em;
+}

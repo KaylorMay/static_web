@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "联系学院",
+  "usingComponents": {
+    "section-heading": "/components/section-heading/section-heading"
+  }
+}

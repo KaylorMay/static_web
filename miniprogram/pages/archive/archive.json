@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "学院档案",
+  "usingComponents": {
+    "section-heading": "/components/section-heading/section-heading",
+    "archive-stat": "/components/archive-stat/archive-stat",
+    "primary-button": "/components/primary-button/primary-button"
+  }
+}

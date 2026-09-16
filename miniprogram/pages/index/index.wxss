@@ -1,0 +1,236 @@
+.index-page {
+  padding-top: 28rpx;
+}
+
+.brand-row {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 16rpx;
+}
+
+.crest-image {
+  width: 62rpx;
+  height: 62rpx;
+}
+
+.brand-cn,
+.brand-en {
+  display: block;
+}
+
+.brand-cn {
+  color: #eef0e9;
+  font-size: 26rpx;
+  letter-spacing: .08em;
+}
+
+.brand-en {
+  margin-top: 2rpx;
+  color: #87a6ab;
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 15rpx;
+  letter-spacing: .18em;
+}
+
+.hero-orb {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 520rpx;
+  margin: -18rpx -20rpx -6rpx;
+}
+
+.hero-orb image {
+  width: 560rpx;
+  height: 560rpx;
+  opacity: .94;
+  animation: orb-float 6s ease-in-out infinite;
+}
+
+.orb-label {
+  position: absolute;
+  color: #87a6ab;
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 16rpx;
+  letter-spacing: .14em;
+}
+
+.orb-label-top {
+  top: 66rpx;
+  left: 12rpx;
+}
+
+.orb-label-bottom {
+  right: 4rpx;
+  bottom: 54rpx;
+  color: #c6a66a;
+}
+
+.hero-section {
+  padding-top: 18rpx;
+  padding-bottom: 64rpx;
+}
+
+.hero-title {
+  display: block;
+  color: #eef0e9;
+  font-family: "Iowan Old Style", "Palatino Linotype", "Noto Serif SC", serif;
+  font-size: 76rpx;
+  letter-spacing: -.07em;
+  line-height: 1.08;
+}
+
+.hero-title-em {
+  color: #e5cf95;
+  font-style: italic;
+}
+
+.hero-lead {
+  display: block;
+  margin-top: 32rpx;
+  color: #9aa9aa;
+  font-size: 27rpx;
+  line-height: 1.9;
+}
+
+.hero-actions {
+  margin-top: 42rpx;
+}
+
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28rpx 62rpx;
+  margin-top: 54rpx;
+  padding-top: 22rpx;
+  border-top: 1rpx solid rgba(167, 193, 194, .15);
+}
+
+.hero-meta view {
+  min-width: 210rpx;
+}
+
+.label-mono,
+.meta-value {
+  display: block;
+}
+
+.meta-value {
+  margin-top: 8rpx;
+  color: #eef0e9;
+  font-size: 22rpx;
+}
+
+.status-live {
+  color: #a6bf91;
+}
+
+.home-section {
+  padding: 82rpx 0 0;
+}
+
+.archive-preview .muted-copy,
+.departments-preview .muted-copy,
+.calendar-preview .muted-copy,
+.contact-preview .muted-copy {
+  display: block;
+  margin-bottom: 34rpx;
+}
+
+.archive-panel {
+  position: relative;
+  margin-bottom: 30rpx;
+  padding: 24rpx 26rpx 22rpx;
+  border: 1rpx solid rgba(198, 166, 106, .32);
+  background: rgba(17, 28, 39, .72);
+}
+
+.panel-stamp {
+  display: block;
+  margin-bottom: 4rpx;
+  color: #8e3f45;
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 16rpx;
+  letter-spacing: .12em;
+  text-align: right;
+}
+
+.panel-note {
+  display: block;
+  padding-top: 20rpx;
+  color: #9aa9aa;
+  font-family: "Iowan Old Style", "Noto Serif SC", serif;
+  font-size: 21rpx;
+  line-height: 1.8;
+}
+
+.panel-note text {
+  display: block;
+  color: #c6a66a;
+}
+
+.archive-marquee {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12rpx;
+  margin-top: 68rpx;
+  padding: 18rpx 0;
+  border-top: 1rpx solid rgba(167, 193, 194, .15);
+  border-bottom: 1rpx solid rgba(167, 193, 194, .15);
+  color: #87a6ab;
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 16rpx;
+  letter-spacing: .11em;
+}
+
+.marquee-dot {
+  color: #c6a66a;
+}
+
+.departments-preview .primary-button,
+.calendar-preview .primary-button {
+  margin-top: 14rpx;
+}
+
+.timeline-list {
+  margin-bottom: 14rpx;
+}
+
+.admission-panel {
+  margin-top: 82rpx;
+  padding: 44rpx 28rpx;
+  border: 1rpx solid rgba(198, 166, 106, .35);
+  background: linear-gradient(125deg, rgba(142, 63, 69, .25), rgba(17, 28, 39, .82) 58%, rgba(198, 166, 106, .08));
+}
+
+.admission-title {
+  display: block;
+  margin-top: 16rpx;
+  color: #eef0e9;
+  font-family: "Iowan Old Style", "Palatino Linotype", "Noto Serif SC", serif;
+  font-size: 58rpx;
+  letter-spacing: -.06em;
+  line-height: 1.12;
+}
+
+.admission-title-em {
+  color: #e5cf95;
+  font-style: italic;
+}
+
+.admission-panel .primary-button {
+  margin-top: 36rpx;
+}
+
+.contact-preview {
+  padding-bottom: 16rpx;
+}
+
+@keyframes orb-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10rpx); }
+}

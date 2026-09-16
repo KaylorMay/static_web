@@ -1,0 +1,92 @@
+<view class="page-shell index-page">
+  <view class="page-container">
+    <view class="brand-row">
+      <image class="crest-image" src="../../assets/crest.svg" mode="aspectFit" />
+      <view>
+        <text class="brand-cn">{{academyMeta.name}}</text>
+        <text class="brand-en">{{academyMeta.englishName}}</text>
+      </view>
+    </view>
+
+    <view class="hero-orb">
+      <image src="../../assets/academy-orb.svg" mode="aspectFit" />
+      <text class="orb-label orb-label-top">FIELD NOTE / 01</text>
+      <text class="orb-label orb-label-bottom">ORIGIN UNKNOWN / °</text>
+    </view>
+
+    <view class="hero-section page-section">
+      <view class="eyebrow"><text class="signal-dot"></text><text>ARCHIVE / 2026 · OPEN FOR INQUIRY</text></view>
+      <text class="hero-title">{{academyMeta.heroTitle}}</text>
+      <text class="hero-title hero-title-em">{{academyMeta.heroHighlight}}</text>
+      <text class="hero-lead">{{academyMeta.description}}</text>
+      <view class="button-row hero-actions">
+        <primary-button label="查阅学院档案" bind:action="goToArchive" />
+        <button class="button-quiet" hover-class="button-quiet-hover" bindtap="goToDepartments">了解院系 <text>↗</text></button>
+      </view>
+      <view class="hero-meta">
+        <view>
+          <text class="label-mono">ACADEMY CODE</text>
+          <text class="meta-value">{{academyMeta.code}}</text>
+        </view>
+        <view>
+          <text class="label-mono">STATUS</text>
+          <text class="meta-value status-live">{{academyMeta.status}}</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="section-divider"></view>
+
+    <view class="home-section archive-preview">
+      <section-heading eyebrow="01 / ACADEMY FILE" title="一所为未知" highlight="保持清醒的学院。" />
+      <text class="muted-copy">我们不承诺答案。学院的工作，是把疑问放到光下，把失控的力量交还给判断，再让真正重要的发现，去改变下一张地图。</text>
+      <view class="archive-panel">
+        <text class="panel-stamp">RESTRICTED / CA–07</text>
+        <block wx:for="{{archiveStats}}" wx:key="label">
+          <archive-stat stat="{{item}}" />
+        </block>
+        <text class="panel-note">所有观测均需由两名以上记录员复核。<text>—— 学院档案守则，第七条</text></text>
+      </view>
+      <primary-button label="查看完整档案" bind:action="goToArchive" />
+    </view>
+
+    <view class="archive-marquee">
+      <text>OBSERVE</text><text class="marquee-dot">·</text><text>QUESTION</text><text class="marquee-dot">·</text><text>REMEMBER</text><text class="marquee-dot">·</text><text>ACT</text>
+    </view>
+
+    <view class="home-section departments-preview">
+      <section-heading eyebrow="02 / DEPARTMENTS" title="三条路径，" highlight="同一个未知。" />
+      <text class="muted-copy">从记录异常到保护现场，从古老符号到新型材料，每一条院系路径都要求严谨，也要求勇气。</text>
+      <block wx:for="{{departments}}" wx:key="id">
+        <department-card department="{{item}}" />
+      </block>
+      <primary-button label="进入院系档案" bind:action="goToDepartments" />
+    </view>
+
+    <view class="home-section calendar-preview">
+      <section-heading eyebrow="03 / FIELD CALENDAR" title="时间会留下" highlight="比传说更硬的证据。" />
+      <text class="muted-copy">学院公开部分观测记录。其余内容正在等待合适的读者，以及足够可靠的夜晚。</text>
+      <view class="timeline-list">
+        <block wx:for="{{calendarItems}}" wx:key="date">
+          <timeline-item item="{{item}}" />
+        </block>
+      </view>
+      <primary-button label="查看完整校历" bind:action="goToCalendar" />
+    </view>
+
+    <view class="admission-panel">
+      <text class="eyebrow">ADMISSION / 2026</text>
+      <text class="admission-title">如果你已经看见，</text>
+      <text class="admission-title admission-title-em">就不要假装没有。</text>
+      <primary-button label="打开入学说明" bind:action="goToContact" />
+    </view>
+
+    <view class="home-section contact-preview">
+      <section-heading eyebrow="04 / CONTACT OFFICE" title="留下你的" highlight="第一份记录。" />
+      <text class="muted-copy">无论你是申请人、研究者，还是只是发现了某个不该被忽略的细节，都可以写信给学院。</text>
+      <primary-button label="联系学院" bind:action="goToContact" />
+    </view>
+
+    <view class="page-footer-note">© 2026 CASSEL ACADEMY ARCHIVE · STATIC ARCHIVE</view>
+  </view>
+</view>

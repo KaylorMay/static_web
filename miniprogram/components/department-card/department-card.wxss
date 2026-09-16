@@ -1,0 +1,109 @@
+.department-card {
+  position: relative;
+  min-height: 510rpx;
+  margin-bottom: 18rpx;
+  padding: 28rpx 24rpx 24rpx;
+  border: 1rpx solid rgba(167, 193, 194, .18);
+  background: rgba(17, 28, 39, .62);
+  transition: background .2s ease, border-color .2s ease;
+}
+
+.department-card.is-expanded {
+  border-color: rgba(198, 166, 106, .52);
+  background: rgba(24, 37, 50, .85);
+}
+
+.card-topline {
+  display: flex;
+  justify-content: space-between;
+  gap: 12rpx;
+  color: #9aa9aa;
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 16rpx;
+  letter-spacing: .12em;
+}
+
+.card-topline-accent {
+  color: #c6a66a;
+  text-align: right;
+}
+
+.department-icon {
+  position: relative;
+  width: 98rpx;
+  height: 98rpx;
+  margin: 76rpx 0 38rpx;
+  color: #c6a66a;
+}
+
+.icon-ring {
+  position: absolute;
+  inset: 8rpx;
+  border: 1rpx solid currentColor;
+  border-radius: 50%;
+}
+
+.icon-ring::before,
+.icon-ring::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 72rpx;
+  height: 1rpx;
+  background: currentColor;
+  content: "";
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.icon-ring::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.icon-core {
+  position: absolute;
+  top: 45rpx;
+  left: 45rpx;
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.department-name {
+  display: block;
+  margin-bottom: 14rpx;
+  color: #eef0e9;
+  font-size: 42rpx;
+  letter-spacing: -.04em;
+}
+
+.department-description {
+  display: block;
+  min-height: 128rpx;
+  color: #9aa9aa;
+  font-size: 23rpx;
+  line-height: 1.85;
+}
+
+.expanded-copy {
+  margin: 16rpx 0 22rpx;
+  padding: 18rpx 0;
+  border-top: 1rpx solid rgba(198, 166, 106, .24);
+  color: #d5d8cf;
+  font-family: "Iowan Old Style", "Noto Serif SC", serif;
+  font-size: 23rpx;
+  line-height: 1.8;
+}
+
+.card-link {
+  display: flex;
+  align-items: center;
+  gap: 16rpx;
+  color: #e5cf95;
+  font-size: 20rpx;
+  letter-spacing: .1em;
+}
+
+.card-arrow {
+  font-size: 28rpx;
+}

@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "院系体系",
+  "usingComponents": {
+    "section-heading": "/components/section-heading/section-heading",
+    "department-card": "/components/department-card/department-card",
+    "primary-button": "/components/primary-button/primary-button"
+  }
+}

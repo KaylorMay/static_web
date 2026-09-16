@@ -1,0 +1,18 @@
+{
+  "component": true,
+  "styleIsolation": "apply-shared",
+  "properties": {
+    "eyebrow": {
+      "type": "String",
+      "value": ""
+    },
+    "title": {
+      "type": "String",
+      "value": ""
+    },
+    "highlight": {
+      "type": "String",
+      "value": ""
+    }
+  }
+}

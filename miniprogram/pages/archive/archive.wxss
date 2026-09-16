@@ -1,0 +1,53 @@
+.archive-page {
+  padding-top: 34rpx;
+}
+
+.page-kicker {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 64rpx;
+  color: #87a6ab;
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 17rpx;
+  letter-spacing: .13em;
+}
+
+.kicker-status {
+  color: #a6bf91;
+}
+
+.archive-page .muted-copy {
+  display: block;
+  margin-bottom: 38rpx;
+}
+
+.archive-panel-full {
+  margin-top: 44rpx;
+}
+
+.archive-copy-block {
+  margin-top: 78rpx;
+  padding-top: 24rpx;
+  border-top: 1rpx solid rgba(167, 193, 194, .15);
+}
+
+.archive-quote {
+  display: block;
+  margin: 18rpx 0 18rpx;
+  color: #e5cf95;
+  font-family: "Iowan Old Style", "Noto Serif SC", serif;
+  font-size: 48rpx;
+  font-style: italic;
+  letter-spacing: -.05em;
+}
+
+.button-stack {
+  display: grid;
+  gap: 16rpx;
+  margin-top: 48rpx;
+}
+
+.button-stack .primary-button {
+  width: 100%;
+}

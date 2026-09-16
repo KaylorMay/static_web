@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "styleIsolation": "apply-shared",
+  "properties": {
+    "department": {
+      "type": "Object",
+      "value": {}
+    }
+  }
+}

@@ -1,0 +1,157 @@
+.contact-page {
+  padding-top: 34rpx;
+}
+
+.contact-page .muted-copy {
+  display: block;
+  margin-bottom: 44rpx;
+}
+
+.contact-details {
+  display: grid;
+  gap: 22rpx;
+  margin-bottom: 52rpx;
+}
+
+.contact-detail {
+  padding-top: 16rpx;
+  border-top: 1rpx solid rgba(167, 193, 194, .15);
+}
+
+.contact-label,
+.contact-value {
+  display: block;
+}
+
+.contact-label {
+  color: #c6a66a;
+  font-size: 17rpx;
+}
+
+.contact-value {
+  margin-top: 6rpx;
+  color: #eef0e9;
+  font-size: 23rpx;
+}
+
+.contact-form {
+  padding: 28rpx 24rpx 24rpx;
+  border: 1rpx solid rgba(198, 166, 106, .32);
+  background: rgba(8, 13, 20, .5);
+}
+
+.form-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 18rpx;
+  margin-bottom: 34rpx;
+  color: #c6a66a;
+  font-size: 16rpx;
+}
+
+.form-field {
+  margin-bottom: 24rpx;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 10rpx;
+  color: #87a6ab;
+  font-size: 21rpx;
+  letter-spacing: .08em;
+}
+
+.form-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 84rpx;
+  padding: 0 18rpx;
+  border: 1rpx solid rgba(167, 193, 194, .2);
+  border-radius: 0;
+  background: rgba(17, 28, 39, .86);
+  color: #eef0e9;
+  font-size: 25rpx;
+}
+
+.form-input:focus {
+  border-color: #c6a66a;
+}
+
+.form-placeholder {
+  color: #627178;
+}
+
+.picker-input {
+  color: #627178;
+}
+
+.picker-input.has-value {
+  color: #eef0e9;
+}
+
+.picker-input text {
+  color: #c6a66a;
+  font-size: 28rpx;
+}
+
+.form-textarea {
+  display: block;
+  height: 220rpx;
+  padding-top: 18rpx;
+  line-height: 1.65;
+}
+
+.submit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18rpx;
+  width: 100%;
+  min-height: 84rpx;
+  border: 1rpx solid #c6a66a;
+  background: #c6a66a;
+  color: #080d14;
+  font-size: 23rpx;
+  letter-spacing: .08em;
+}
+
+.submit-button text {
+  font-size: 28rpx;
+}
+
+.submit-hover {
+  opacity: .72;
+}
+
+.form-status {
+  display: block;
+  margin-top: 18rpx;
+  font-size: 21rpx;
+  line-height: 1.6;
+}
+
+.form-status.error {
+  color: #d88482;
+}
+
+.form-status.success {
+  color: #a6bf91;
+}
+
+.contact-notice {
+  margin-top: 48rpx;
+  padding: 22rpx;
+  border-left: 2rpx solid #8e3f45;
+  background: rgba(142, 63, 69, .12);
+  color: #9aa9aa;
+  font-size: 20rpx;
+  line-height: 1.75;
+}
+
+.contact-notice .eyebrow {
+  display: block;
+  margin-bottom: 8rpx;
+  color: #8e3f45;
+}

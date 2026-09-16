@@ -1,0 +1,12 @@
+<view class="timeline-item">
+  <text class="timeline-date">{{item.date}}</text>
+  <view class="timeline-copy">
+    <view class="timeline-type-row">
+      <text class="timeline-type">{{item.type}}</text>
+      <text class="timeline-status {{item.open ? 'is-open' : 'is-closed'}}">{{item.status}}</text>
+    </view>
+    <text class="timeline-title">{{item.title}}</text>
+    <text class="timeline-description">{{item.description}}</text>
+  </view>
+  <text class="timeline-arrow">↗</text>
+</view>

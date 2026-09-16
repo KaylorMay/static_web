@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/archive/archive",
+    "pages/departments/departments",
+    "pages/calendar/calendar",
+    "pages/contact/contact"
+  ],
+  "window": {
+    "navigationBarTitleText": "卡塞尔学院",
+    "navigationBarBackgroundColor": "#080d14",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#080d14",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#87a6ab",
+    "selectedColor": "#e5cf95",
+    "backgroundColor": "#0a1119",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/archive/archive",
+        "text": "档案"
+      },
+      {
+        "pagePath": "pages/calendar/calendar",
+        "text": "校历"
+      },
+      {
+        "pagePath": "pages/contact/contact",
+        "text": "联系"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

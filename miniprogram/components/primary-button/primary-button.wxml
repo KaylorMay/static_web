@@ -1,0 +1,4 @@
+<button class="primary-button {{variant}}" hover-class="button-hover" bindtap="handleTap">
+  <text>{{label}}</text>
+  <text class="button-arrow">{{arrow}}</text>
+</button>

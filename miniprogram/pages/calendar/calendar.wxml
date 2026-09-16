@@ -1,0 +1,22 @@
+<view class="page-shell calendar-page">
+  <view class="page-container">
+    <view class="page-kicker"><text>FIELD CALENDAR / 2026</text><text class="kicker-status">LIVE</text></view>
+    <section-heading eyebrow="03 / FIELD CALENDAR" title="时间会留下" highlight="比传说更硬的证据。" />
+    <text class="muted-copy">学院公开部分观测记录。其余内容正在等待合适的读者，以及足够可靠的夜晚。</text>
+
+    <view class="timeline-list calendar-timeline">
+      <block wx:for="{{calendarItems}}" wx:key="date">
+        <timeline-item item="{{item}}" />
+      </block>
+    </view>
+
+    <view class="calendar-note">
+      <text class="eyebrow">READING INSTRUCTION</text>
+      <text class="note-title">时间不是答案。</text>
+      <text class="muted-copy">它只是把被忽略的细节重新放回桌面。请在每一个开放日期前，准备一份你无法向别人解释、但一直记得的观察记录。</text>
+    </view>
+
+    <primary-button label="联系学院" bind:action="goToContact" />
+    <view class="page-footer-note">FIELD CALENDAR · LAST SYNC 2026.09</view>
+  </view>
+</view>

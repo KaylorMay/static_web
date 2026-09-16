@@ -1,0 +1,18 @@
+{
+  "component": true,
+  "styleIsolation": "apply-shared",
+  "properties": {
+    "label": {
+      "type": "String",
+      "value": "继续"
+    },
+    "arrow": {
+      "type": "String",
+      "value": "↗"
+    },
+    "variant": {
+      "type": "String",
+      "value": "primary"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 18rpx;
+  padding: 28rpx 0;
+  border-top: 1rpx solid rgba(167, 193, 194, .15);
+}
+
+.timeline-date {
+  width: 88rpx;
+  color: #c6a66a;
+  font-family: "Iowan Old Style", "Palatino Linotype", serif;
+  font-size: 32rpx;
+  line-height: 1.2;
+}
+
+.timeline-copy {
+  flex: 1;
+  min-width: 0;
+}
+
+.timeline-type-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12rpx;
+}
+
+.timeline-type {
+  color: #87a6ab;
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 16rpx;
+  letter-spacing: .12em;
+}
+
+.timeline-status {
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 15rpx;
+  letter-spacing: .1em;
+}
+
+.timeline-status.is-open {
+  color: #a6bf91;
+}
+
+.timeline-status.is-closed {
+  color: #8e3f45;
+}
+
+.timeline-title {
+  display: block;
+  margin: 12rpx 0 8rpx;
+  color: #eef0e9;
+  font-size: 27rpx;
+  line-height: 1.45;
+}
+
+.timeline-description {
+  display: block;
+  color: #9aa9aa;
+  font-size: 21rpx;
+  line-height: 1.75;
+}
+
+.timeline-arrow {
+  color: #c6a66a;
+  font-size: 30rpx;
+  line-height: 1;
+}

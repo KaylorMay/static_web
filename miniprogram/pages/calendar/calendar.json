@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "校历观测",
+  "usingComponents": {
+    "section-heading": "/components/section-heading/section-heading",
+    "timeline-item": "/components/timeline-item/timeline-item",
+    "primary-button": "/components/primary-button/primary-button"
+  }
+}

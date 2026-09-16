@@ -1,0 +1,45 @@
+<view class="page-shell contact-page">
+  <view class="page-container">
+    <view class="page-kicker"><text>CONTACT OFFICE / CHANNEL 07</text><text class="kicker-status">SECURE</text></view>
+    <section-heading eyebrow="04 / CONTACT OFFICE" title="留下你的" highlight="第一份记录。" />
+    <text class="muted-copy">无论你是申请人、研究者，还是只是发现了某个不该被忽略的细节，都可以写信给学院。</text>
+
+    <view class="contact-details">
+      <view wx:for="{{contactDetails}}" wx:key="label" class="contact-detail">
+        <text class="contact-label">{{item.label}}</text>
+        <text class="contact-value">{{item.value}}</text>
+      </view>
+    </view>
+
+    <form class="contact-form" bindsubmit="handleSubmit">
+      <view class="form-heading"><text>INQUIRY FORM / 07</text><text>LOCAL DEMO CHANNEL</text></view>
+      <view class="form-field">
+        <text class="form-label">姓名</text>
+        <input name="name" class="form-input" type="text" placeholder="你的名字" placeholder-class="form-placeholder" value="{{form.name}}" data-field="name" bindinput="handleInput" />
+      </view>
+      <view class="form-field">
+        <text class="form-label">电子邮箱</text>
+        <input name="email" class="form-input" type="text" placeholder="name@example.com" placeholder-class="form-placeholder" value="{{form.email}}" data-field="email" bindinput="handleInput" />
+      </view>
+      <view class="form-field">
+        <text class="form-label">来信主题</text>
+        <picker mode="selector" range="{{subjects}}" value="{{subjectIndex}}" bindchange="handleSubjectChange">
+          <view class="form-input picker-input {{form.subject ? 'has-value' : ''}}">{{form.subject || '请选择档案类型'}}<text>⌄</text></view>
+        </picker>
+      </view>
+      <view class="form-field">
+        <text class="form-label">记录内容</text>
+        <textarea name="message" class="form-input form-textarea" placeholder="请描述你想让学院知道的事" placeholder-class="form-placeholder" value="{{form.message}}" data-field="message" bindinput="handleInput" maxlength="1000"></textarea>
+      </view>
+      <button class="submit-button" formType="submit" hover-class="submit-hover">提交记录 <text>↗</text></button>
+      <text wx:if="{{formStatus}}" class="form-status {{formStatusType}}">{{formStatus}}</text>
+    </form>
+
+    <view class="contact-notice">
+      <text class="eyebrow">NOTICE</text>
+      <text>当前为本地演示表单，提交内容不会上传或保存到服务器。</text>
+    </view>
+
+    <view class="page-footer-note">© 2026 CASSEL ACADEMY ARCHIVE · STATIC ARCHIVE</view>
+  </view>
+</view>

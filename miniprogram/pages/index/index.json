@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "卡塞尔学院",
+  "usingComponents": {
+    "section-heading": "/components/section-heading/section-heading",
+    "archive-stat": "/components/archive-stat/archive-stat",
+    "department-card": "/components/department-card/department-card",
+    "timeline-item": "/components/timeline-item/timeline-item",
+    "primary-button": "/components/primary-button/primary-button"
+  }
+}

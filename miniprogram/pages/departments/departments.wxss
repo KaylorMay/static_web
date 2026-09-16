@@ -1,0 +1,31 @@
+.departments-page {
+  padding-top: 34rpx;
+}
+
+.departments-page .muted-copy {
+  display: block;
+  margin-bottom: 38rpx;
+}
+
+.department-list {
+  margin-top: 44rpx;
+}
+
+.department-note {
+  margin: 76rpx 0 40rpx;
+  padding: 24rpx 0 0;
+  border-top: 1rpx solid rgba(167, 193, 194, .15);
+}
+
+.note-title {
+  display: block;
+  margin: 16rpx 0;
+  color: #e5cf95;
+  font-family: "Iowan Old Style", "Noto Serif SC", serif;
+  font-size: 48rpx;
+  letter-spacing: -.05em;
+}
+
+.department-note .muted-copy {
+  margin-bottom: 0;
+}

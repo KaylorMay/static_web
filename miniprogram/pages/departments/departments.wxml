@@ -1,0 +1,22 @@
+<view class="page-shell departments-page">
+  <view class="page-container">
+    <view class="page-kicker"><text>FIELD SYSTEM / 03 ROUTES</text><text class="kicker-status">ACTIVE</text></view>
+    <section-heading eyebrow="02 / DEPARTMENTS" title="三条路径，" highlight="同一个未知。" />
+    <text class="muted-copy">从记录异常到保护现场，从古老符号到新型材料，每一条院系路径都要求严谨，也要求勇气。</text>
+
+    <view class="department-list">
+      <block wx:for="{{departments}}" wx:key="id">
+        <department-card department="{{item}}" />
+      </block>
+    </view>
+
+    <view class="department-note">
+      <text class="eyebrow">FIELD RULE / 07</text>
+      <text class="note-title">记录先于解释。</text>
+      <text class="muted-copy">每条院系路线都共享同一套档案守则：先确认事实，再讨论意义；先保护现场，再追问未知。</text>
+    </view>
+
+    <primary-button label="留下你的记录" bind:action="goToContact" />
+    <view class="page-footer-note">DEPARTMENTS · OBSERVE / QUESTION / REMEMBER / ACT</view>
+  </view>
+</view>

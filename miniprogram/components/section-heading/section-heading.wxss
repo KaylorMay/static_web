@@ -1,0 +1,25 @@
+.section-heading {
+  margin-bottom: 42rpx;
+}
+
+.section-eyebrow {
+  display: block;
+  margin-bottom: 18rpx;
+  color: #87a6ab;
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 18rpx;
+  letter-spacing: .14em;
+}
+
+.section-title {
+  display: block;
+  color: #eef0e9;
+  font-family: "Iowan Old Style", "Palatino Linotype", "Noto Serif SC", serif;
+  font-size: 68rpx;
+  letter-spacing: -.06em;
+  line-height: 1.12;
+}
+
+.section-title-highlight {
+  color: #e5cf95;
+}

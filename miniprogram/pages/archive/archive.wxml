@@ -1,0 +1,28 @@
+<view class="page-shell archive-page">
+  <view class="page-container">
+    <view class="page-kicker"><text>ARCHIVE / CA–07</text><text class="kicker-status">OPEN</text></view>
+    <section-heading eyebrow="01 / ACADEMY FILE" title="一所为未知" highlight="保持清醒的学院。" />
+    <text class="muted-copy">卡塞尔学院不承诺答案。学院的工作，是把疑问放到光下，把失控的力量交还给判断，再让真正重要的发现，去改变下一张地图。</text>
+
+    <view class="archive-panel archive-panel-full">
+      <text class="panel-stamp">RESTRICTED / CA–07</text>
+      <block wx:for="{{archiveStats}}" wx:key="label">
+        <archive-stat stat="{{item}}" />
+      </block>
+      <text class="panel-note">所有观测均需由两名以上记录员复核。<text>—— 学院档案守则，第七条</text></text>
+    </view>
+
+    <view class="archive-copy-block">
+      <text class="eyebrow">ACADEMY PRINCIPLE</text>
+      <text class="archive-quote">保持好奇，保持清醒。</text>
+      <text class="muted-copy">学院欢迎提出问题的人，也欢迎愿意为自己的判断留下记录的人。每一份档案都不是结论，而是下一次观察开始前，值得被重新阅读的线索。</text>
+    </view>
+
+    <view class="button-stack">
+      <primary-button label="进入院系档案" bind:action="goToDepartments" />
+      <primary-button label="联系学院" variant="quiet" bind:action="goToContact" />
+    </view>
+
+    <view class="page-footer-note">ARCHIVE STATUS · {{academyMeta.status}} · NOCTURNE CHANNEL</view>
+  </view>
+</view>

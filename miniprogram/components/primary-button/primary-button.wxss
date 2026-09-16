@@ -1,0 +1,28 @@
+.primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20rpx;
+  min-height: 84rpx;
+  padding: 0 26rpx;
+  border: 1rpx solid #c6a66a;
+  border-radius: 0;
+  background: #c6a66a;
+  color: #080d14;
+  font-size: 22rpx;
+  letter-spacing: .08em;
+}
+
+.primary-button.quiet {
+  border-color: rgba(167, 193, 194, .25);
+  background: transparent;
+  color: #87a6ab;
+}
+
+.button-arrow {
+  font-size: 28rpx;
+}
+
+.button-hover {
+  opacity: .72;
+}
