@@ -74,7 +74,7 @@ miniprogram/
    └─ academy-orb.svg
 ```
 
-`project.config.json` 放在项目根目录，设置 `miniprogramRoot` 为 `miniprogram/`，使用 `touristappid` 作为本地预览 AppID；正式发布前由项目所有者替换为真实 AppID。
+`project.config.json` 放在项目根目录，设置 `miniprogramRoot` 为 `miniprogram/`，本地预览阶段不填写 AppID；正式发布前由项目所有者替换为真实 AppID。
 
 ## 数据与组件设计
 

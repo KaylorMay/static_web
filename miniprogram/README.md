@@ -7,7 +7,7 @@
 1. 打开微信开发者工具。
 2. 选择“导入项目”。
 3. 选择项目根目录 `static_web`，工具会根据根目录的 `project.config.json` 将 `miniprogram/` 识别为小程序根目录。
-4. AppID 使用项目配置中的 `touristappid` 进行本地预览；发布前替换为真实 AppID。
+4. 当前项目配置未填写 AppID，可先使用无 AppID 模式预览；发布前替换为真实 AppID。
 
 ## 目录说明
 
